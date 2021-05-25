@@ -1,0 +1,32 @@
+// tsconfig.json
+{
+	"compilerOptions": {
+		"target": "es2020",
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"lib": ["esnext", "esnext.asynciterable", "dom"],
+		"experimentalDecorators": true,
+		"esModuleInterop": true,
+		"allowJs": false,
+		"forceConsistentCasingInFileNames": true,
+		"removeComments": true,
+		"alwaysStrict": true,
+		"importHelpers": true,
+		"pretty": true,
+		"noImplicitAny": true,
+		"sourceMap": true,
+		"strict": true,
+		"noEmit": true,
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["./*"],
+			"@/*": ["./*"],
+			"~~/*": ["./*"],
+			"@@/*": ["./*"]
+		},
+		"types": ["@types/node", "@nuxt/types", "@nuxtjs/color-mode"]
+	},
+	"exclude": ["node_modules", ".nuxt", "dist"]
+}

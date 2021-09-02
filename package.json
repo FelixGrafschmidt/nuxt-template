@@ -18,7 +18,7 @@
 		"@nuxtjs/pwa": "^3.3.5",
 		"@tailwindcss/forms": "^0.3.2",
 		"@tailwindcss/jit": "^0.1.18",
-		"core-js": "^3.12.1",
+		"core-js": "^3.17.1",
 		"nuxt": "^2.15.6",
 		"nuxt-property-decorator": "^2.9.1",
 		"nuxt-vite": "^0.1.1",

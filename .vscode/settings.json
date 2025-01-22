@@ -1,12 +1,10 @@
 {
-	"editor.formatOnSave": false,
-	"editor.codeActionsOnSave": {
-		"source.fixAll": "explicit"
-	},
-	"search.exclude": {
-		"**/.yarn": true,
-		"**/.pnp.*": true
-	},
-	"eslint.options": { "flags": ["unstable_ts_config"] }
-
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  }
 }

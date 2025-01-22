@@ -1,19 +1,17 @@
-import { presetScrollbar } from "unocss-preset-scrollbar";
-import { presetWind, transformerDirectives, defineConfig } from "unocss";
-import config from "@una-ui/nuxt/una.config";
+import { defineConfig, presetWind, transformerDirectives } from 'unocss';
+import { presetScrollbar } from 'unocss-preset-scrollbar';
 
 export default defineConfig({
-	...config,
-	// presets
+  // presets
 
-	// core options
-	shortcuts: [],
-	rules: [],
-	presets: [
-		presetWind(),
-		presetScrollbar({
-			// config
-		}),
-	],
-	transformers: [transformerDirectives()],
+  // core options
+  shortcuts: [],
+  rules: [],
+  presets: [
+    presetWind(),
+    presetScrollbar({
+      // config
+    }),
+  ],
+  transformers: [transformerDirectives()],
 });

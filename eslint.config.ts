@@ -6,7 +6,15 @@ import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default withNuxt(
   eslint.configs.recommended,
-  antfu({ unocss: true, rules: { 'style/semi': 'off' } }),
+  await antfu({
+    unocss: true,
+    rules: {
+      'style/semi': 'off',
+      'vue/block-order': ['error', {
+        order: [['template', 'script'], 'style'],
+      }],
+    },
+  }),
   {
     files: ['**/*.{ts}'],
     languageOptions: {

@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   unocss: {
     nuxtLayers: true,
   },
-  compatibilityDate: '2024-11-22',
+  compatibilityDate: '2025-03-29',
   eslint: {
     config: {
       standalone: false,

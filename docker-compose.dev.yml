@@ -1,0 +1,16 @@
+volumes:
+  node_modules:
+  nuxt_cache:
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    ports:
+      - "${PORT:-3000}:3000"
+      - "${VITE_DEV_PORT:-24678}:24678"
+    volumes:
+      - .:/app
+      - nuxt_cache:/app/.nuxt
+      - node_modules:/app/node_modules
+    tmpfs: /tmp

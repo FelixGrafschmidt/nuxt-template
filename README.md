@@ -1,63 +1,29 @@
-# Nuxt 3 Minimal Starter
+# Nuxt Template
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a template project built with [Nuxt.js](https://nuxtjs.org/), a powerful framework for building server-side rendered (SSR) Vue.js applications.
 
-## Setup
+## Development
 
-Make sure to install the dependencies:
+### Requirements
 
-```bash
-# npm
-npm install
+- Docker
+- docker-compose
+- Bun
 
-# pnpm
-pnpm install
+### Configuration
 
-# yarn
-yarn install
+- Copy `.env.sample` to `.env.local` and update the environment variables as needed.
+  - PORT: The port on which the application will run.
+  - VITE_DEV_PORT: The port for the Vite development server.
+
+### Setup
+
+```sh
+  bun docker-up
 ```
 
-## Development Server
+### Usage
 
-Start the development server on `http://localhost:3000`:
+Access the app at `http://localhost:<PORT>`.
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Production Build - TODO

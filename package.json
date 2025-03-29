@@ -10,7 +10,7 @@
     "upgrade-nuxt": "nuxi upgrade",
     "upgrade-deps": "bunx taze major -w",
     "upgrade-all": "bun upgrade-nuxt && bun upgrade-deps",
-    "docker-up": "docker compose --env-file ./.env.local -f docker-compose.dev.yml up"
+    "docker-up": "COMPOSE_BAKE=true docker compose --env-file ./.env.local -f docker-compose.dev.yml up"
   },
   "dependencies": {},
   "devDependencies": {

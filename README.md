@@ -8,7 +8,7 @@ This is a template project built with [Nuxt.js](https://nuxtjs.org/), a powerful
 
 - Docker
 - docker-compose
-- Bun
+- yarn
 
 ### Configuration
 
@@ -19,7 +19,7 @@ This is a template project built with [Nuxt.js](https://nuxtjs.org/), a powerful
 ### Setup
 
 ```sh
-  bun docker-up
+  yarn docker-up
 ```
 
 ### Usage

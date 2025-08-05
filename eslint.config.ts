@@ -2,7 +2,7 @@ import antfu from '@antfu/eslint-config';
 import eslint from '@eslint/js';
 import globals from 'globals';
 import vueeslintparser from 'vue-eslint-parser';
-import withNuxt from './.nuxt/eslint.config.mjs';
+import withNuxt from '.nuxt/eslint.config.mjs';
 
 export default withNuxt(
   eslint.configs.recommended,

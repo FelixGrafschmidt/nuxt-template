@@ -1,4 +1,4 @@
-import { defineConfig, presetWind, transformerDirectives } from 'unocss';
+import { defineConfig, presetWind3, transformerDirectives } from 'unocss';
 import { presetScrollbar } from 'unocss-preset-scrollbar';
 
 export default defineConfig({
@@ -8,7 +8,7 @@ export default defineConfig({
   shortcuts: [],
   rules: [],
   presets: [
-    presetWind(),
+    presetWind3(),
     presetScrollbar({
       // config
     }),

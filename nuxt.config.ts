@@ -13,4 +13,18 @@ export default defineNuxtConfig({
       standalone: false,
     },
   },
+  typescript: {
+    // Customize app/server TypeScript config
+    tsConfig: {
+      compilerOptions: {
+        strict: true,
+      },
+    },
+    // Customize build-time TypeScript config
+    nodeTsConfig: {
+      compilerOptions: {
+        strict: true,
+      },
+    },
+  },
 });

@@ -1,8 +1,8 @@
 import antfu from '@antfu/eslint-config';
-import eslint from '@eslint/js';
-import globals from 'globals';
-import vueeslintparser from 'vue-eslint-parser';
-import withNuxt from '.nuxt/eslint.config.mjs';
+import * as eslint from '@eslint/js';
+import * as globals from 'globals';
+import * as vueParser from 'vue-eslint-parser'
+import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default withNuxt(
   eslint.configs.recommended,
@@ -18,7 +18,7 @@ export default withNuxt(
   {
     files: ['**/*.{ts}'],
     languageOptions: {
-      parser: vueeslintparser,
+      parser: vueParser,
       parserOptions: {
         ecmaVersion: 'latest',
         parser: '@typescript-eslint/parser',
